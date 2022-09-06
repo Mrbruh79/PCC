@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.mi
+n.css">
+</head>
+<body>
+<div class="main-container">
+<h1 class ="top">Login</h1>
+<hr>
+<form id="loginForm" action="./pin" method="post"
+autocomplete="off">
+<div class="form-element col-6">
+<label class="username" for="username">Username</label>
+</div>
+<div class="form-element col-6">
+<input name="username" type="text" id="username"
+placeholder="Username" autofocus><br>
+</div>
+<div class="form-element">
+<div class="flex"> 
+    <label id="captcha-box">Captcha</label><button type="button" id="reload"><i class="fa-solid fa-arrows-rotate"></i></button>
+</div>
+<input type="text" id="captcha" placeholder="Enter Above Captcha">
+</div>
+<div class="form-element">
+<button type="button" class="btn" id="validateBtn">Submit</button>
+</div>
+</form>
+<a href="signup.html" class="bottombut">Sign Up</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
